@@ -1,7 +1,5 @@
 /* Audio passthru
-
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-
+   This example code is in the Public Domain (or CC30 licensed, at your option.)
    Unless required by applicable law or agreed to in writing, this
    software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
    CONDITIONS OF ANY KIND, either express or implied.
@@ -14,13 +12,14 @@
 #include "audio_pipeline.h"
 #include "i2s_stream.h"
 #include "board.h"
+#include "equalizer.h"
 
 static const char *TAG = "PASSTHRU";
 
 void app_main(void)
 {
     audio_pipeline_handle_t pipeline;
-    audio_element_handle_t i2s_stream_writer, i2s_stream_reader;
+    audio_element_handle_t i2s_stream_writer, i2s_stream_reader, equalizer;
 
     esp_log_level_set("*", ESP_LOG_INFO);
     esp_log_level_set(TAG, ESP_LOG_DEBUG);
@@ -43,12 +42,19 @@ void app_main(void)
     i2s_cfg_read.type = AUDIO_STREAM_READER;
     i2s_stream_reader = i2s_stream_init(&i2s_cfg_read);
 
+    equalizer_cfg_t eq_cfg = DEFAULT_EQUALIZER_CONFIG();
+	int set_gain[] = { 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30};
+	eq_cfg.set_gain =
+		set_gain; // The size of gain array should be the multiplication of NUMBER_BAND and number channels of audio stream data. The minimum of gain is -30 dB.
+	equalizer = equalizer_init(&eq_cfg);
+
     ESP_LOGI(TAG, "[3.3] Register all elements to audio pipeline");
     audio_pipeline_register(pipeline, i2s_stream_reader, "i2s_read");
+    audio_pipeline_register(pipeline, equalizer, "equalizer");
     audio_pipeline_register(pipeline, i2s_stream_writer, "i2s_write");
 
     ESP_LOGI(TAG, "[3.4] Link it together [codec_chip]-->i2s_stream_reader-->i2s_stream_writer-->[codec_chip]");
-    audio_pipeline_link(pipeline, (const char *[]) {"i2s_read", "i2s_write"}, 2);
+    audio_pipeline_link(pipeline, (const char *[]) {"i2s_read", "equalizer", "i2s_write"}, 3);
 
     ESP_LOGI(TAG, "[ 4 ] Set up  event listener");
     audio_event_iface_cfg_t evt_cfg = AUDIO_EVENT_IFACE_DEFAULT_CFG();
@@ -87,6 +93,7 @@ void app_main(void)
     audio_pipeline_terminate(pipeline);
 
     audio_pipeline_unregister(pipeline, i2s_stream_reader);
+    audio_pipeline_unregister(pipeline, equalizer);
     audio_pipeline_unregister(pipeline, i2s_stream_writer);
 
     /* Terminate the pipeline before removing the listener */
@@ -98,5 +105,6 @@ void app_main(void)
     /* Release all resources */
     audio_pipeline_deinit(pipeline);
     audio_element_deinit(i2s_stream_reader);
+    audio_element_deinit(equalizer);
     audio_element_deinit(i2s_stream_writer);
 }
