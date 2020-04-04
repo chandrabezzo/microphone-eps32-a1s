@@ -1,5 +1,5 @@
 /* Audio passthru
-   This example code is in the Public Domain (or CC30 licensed, at your option.)
+   This example code is in the Public Domain (or CC20 licensed, at your option.)
    Unless required by applicable law or agreed to in writing, this
    software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
    CONDITIONS OF ANY KIND, either express or implied.
@@ -43,9 +43,9 @@ void app_main(void)
     i2s_stream_reader = i2s_stream_init(&i2s_cfg_read);
 
     equalizer_cfg_t eq_cfg = DEFAULT_EQUALIZER_CONFIG();
-	int set_gain[] = { 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30};
+	int set_gain[] = { 40, 40, 40, 40, 30, 30, 30, 13, 13, 13, 40, 40, 40, 40, 30, 30, 30, 13, 13, 13};
 	eq_cfg.set_gain =
-		set_gain; // The size of gain array should be the multiplication of NUMBER_BAND and number channels of audio stream data. The minimum of gain is -30 dB.
+		set_gain; // The size of gain array should be the multiplication of NUMBER_BAND and number channels of audio stream data. The minimum of gain is -20 dB.
 	equalizer = equalizer_init(&eq_cfg);
 
     ESP_LOGI(TAG, "[3.3] Register all elements to audio pipeline");
