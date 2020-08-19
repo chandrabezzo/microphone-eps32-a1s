@@ -1,12 +1,12 @@
 {
     "project_name":       "bootloader",
     "project_path":       "/Users/bezzo/esp/esp-adf/esp-idf/components/bootloader/subproject",
-    "build_dir":          "/Users/bezzo/eclipse-workspace/speech_recognition/build/bootloader",
-    "config_file":        "/Users/bezzo/eclipse-workspace/speech_recognition/sdkconfig",
+    "build_dir":          "/Users/bezzo/eclipse-workspace/heart_speaker/build/bootloader",
+    "config_file":        "/Users/bezzo/eclipse-workspace/heart_speaker/sdkconfig",
     "config_defaults":    "",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",
-    "git_revision":       "HEAD-HASH-NOTFOUND",
+    "git_revision":       "v4.0",
     "phy_data_partition": "",
     "monitor_baud" : "115200",
     "config_environment" : {

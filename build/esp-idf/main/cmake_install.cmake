@@ -1,4 +1,4 @@
-# Install script for directory: /Users/bezzo/eclipse-workspace/speech_recognition/main
+# Install script for directory: /Users/bezzo/eclipse-workspace/heart_speaker/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

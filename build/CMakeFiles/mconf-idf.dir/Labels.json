@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/CMakeFiles/mconf-idf"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/CMakeFiles/mconf-idf"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/CMakeFiles/mconf-idf.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/CMakeFiles/mconf-idf.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/CMakeFiles/mconf-idf-complete.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/CMakeFiles/mconf-idf-complete.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule"
 		}
 	],
 	"target" : 

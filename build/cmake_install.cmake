@@ -1,4 +1,4 @@
-# Install script for directory: /Users/bezzo/eclipse-workspace/speech_recognition
+# Install script for directory: /Users/bezzo/eclipse-workspace/heart_speaker
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/bezzo/eclipse-workspace/speech_recognition/build/esp-idf/cmake_install.cmake")
+  include("/Users/bezzo/eclipse-workspace/heart_speaker/build/esp-idf/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/bezzo/eclipse-workspace/speech_recognition/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/bezzo/eclipse-workspace/heart_speaker/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

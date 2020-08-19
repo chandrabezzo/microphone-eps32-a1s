@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/CMakeFiles/bootloader"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/CMakeFiles/bootloader.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "/Users/bezzo/eclipse-workspace/speech_recognition/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/Users/bezzo/eclipse-workspace/heart_speaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		}
 	],
 	"target" : 
